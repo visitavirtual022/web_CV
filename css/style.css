@@ -1,0 +1,498 @@
+body,
+main,
+footer {
+  font-family: "JetBrains Mono", monospace;
+  font-family: "M PLUS 1 Code";
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: black;
+  color: greenyellow;
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: large;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: rgb(175, 230, 247);
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+div ul li {
+  font-weight: bold;
+}
+
+/* <<<<<<<<sección Media queris - Media Queries -- Adaptable (responsive) >>>>>*/
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+/*<<<<<<<<sección hero>>>>>>>>*/
+main {
+  margin-top: 6rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background-color: white;
+  min-height: 150px;
+  text-align: center;
+}
+
+section .hero-ppal h1 {
+  font-size: 2.5rem;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.hero-ppal {
+  padding: 3rem;
+}
+
+.hero-img-perfil {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  /* para redorndera una imagen, también se puede usar rounded-circle en bootstrap*/
+  margin: 1.25rem;
+}
+
+section .hero-ppal h2 {
+  font: size 1.5rem;
+  color: #030303;
+}
+
+/*<<<<<<<<<seccion sobre-mi>>>>>>>>>>>>>>*/
+
+.sobre-mi {
+  /*con esto centro dentro del contenerdor en eje Y*/
+  height: 100%;
+  padding: 100px;
+}
+.seccion-oscura {
+  background-color: #0c1925;
+  color: white;
+}
+
+.sobre-mi .contenedor {
+  /*con esto centro en conternedor en eje X*/
+  max-width: 850px;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+h2 {
+  color: #0066cc;
+}
+p {
+  color: white;
+}
+.verde {
+  color: #00cc00;
+}
+.rojo {
+  color: #cc0000;
+}
+.azul {
+  color: #0066cc;
+}
+.amarillo {
+  color: #ffcc00;
+}
+
+.sobre-mi ul {
+  text-align: justify;
+}
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+.sobre-mi p {
+  font-size: 1.2rem;
+}
+
+/*<<<<<<<<<<<Seccion Estudios>>>>>>>>>>>*/
+
+.estudios {
+  padding: 110px;
+}
+
+/* Estilo para cada columna */
+.estudios .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+/* Cambio de color al pasar el ratón sobre la columna */
+.estudios .columna:hover {
+  background-color: #1b1b32;
+}
+.estudios .columna:hover p {
+  color: greenyellow;
+}
+
+/* Icono de laptop común para todas las columnas */
+.estudios i {
+  font-size: 2.5rem;
+  color: greenyellow;
+  background-color: black;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+/* Contenedor de insignias */
+.badges-contenedor {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Títulos de las insignias */
+.badges span {
+  margin: 5px;
+}
+
+/* Estilo de las columnas comunes */
+.estudios .columna,
+.estudios-titulo {
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+/* Sección Clara */
+.seccion-clara {
+  background-color: white;
+}
+
+/* Estilo del título */
+.estudios-titulo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Estilo del párrafo */
+.columna p {
+  color: black;
+}
+
+/*>>>>>>>>>>>>>>>SECCION PROYECTOS<<<<<<<<<<<<<<<<*/
+
+.proyectos-recientes {
+  padding: 100px;
+}
+
+.texto-negro {
+  color: rgb(201, 95, 57);
+  font-weight: bold;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: black;
+  font-size: large;
+}
+
+/* Estilos de las imágenes y el overlay */
+.proyectos {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  position: relative;
+  /* Añadido para que el overlay se posicione correctamente */
+}
+
+.proyectos img {
+  /* Ajustar el tamaño de la imagen */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Esto asegura que la imagen se ajuste manteniendo su relación de aspecto */
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  position: absolute;
+  transition: all 0.2s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: black;
+}
+
+.proyectos:hover img {
+  opacity: 0.2;
+}
+
+/* Corregir el selector de hover */
+.proyectos:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 30px;
+  margin-left: 49px;
+}
+
+.btn-info {
+  background-color: navy;
+  font-weight: bold;
+  color: white;
+  border-color: #1b1b32;
+}
+
+/*>>>SECCION DE ARTICULOS>>>>>>*/
+
+.articulos {
+  min-height: 300px;
+  padding: 30px;
+}
+
+.articulos .card {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+/*<<<<<<<<SECCION CARRUSEL-TESTIMONIOS>>>>>>>>>*/
+
+.testimonios {
+  padding: 100px 40px 40px 40px;
+}
+
+.testimonios-carrusel {
+  max-width: 700px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  width: 70%;
+  font-size: 1.2;
+  color: #030303;
+  font-style: italic;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.seccion-descripcion,
+.testimonio-texto {
+  font-family: "Courier New", monospace;
+  color: green;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.testimonio-info .cargo,
+.cliente {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/*<<<<<<<<SECCION CONTACTO>>>>>>>>>*/
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .seccion-titulo h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.contacto .seccion-descripcion p {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+/* Dentro de tu archivo CSS */
+.contacto-btn {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto-btn i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto-btn:hover i {
+  color: black;
+}
+
+/*<<<<<<<<SECCION FOOTER - REDES SOCIALES>>>>>>>>>*/
+
+footer {
+  min-height: 500px;
+}
+
+.footer-icono {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 2rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.instagram:hover {
+  color: #e4405f;
+  /* Cambia el color al pasar el ratón sobre Instagram */
+}
+
+.linkedin:hover {
+  color: #e4405f;
+  /* Cambia el color al pasar el ratón sobre LinkedIn */
+}
+
+.email:hover {
+  color: #ff4500;
+  /* Cambia el color al pasar el ratón sobre el correo electrónico */
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: rgb(201, 95, 57);
+  padding: 20px;
+}
